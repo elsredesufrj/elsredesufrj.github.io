@@ -173,10 +173,58 @@
     <section id="arquitetura">
         <div class="container">
             <div class="row">
-                <div class="col-lg-10 col-lg-offset-1 text-center">
+                <div class="col-lg-10 col-lg-offset-1 text-left">
                     <h2 class="section-heading">Padronizações</h2>
                     <hr class="light">
-                    <p>Visando a importância de que qualquer fabricante possa produzir um veículo capaz de ser introduzido em uma rede veicular, o IEEE aprovou em 2010 uma emenda ao padrão 802.11 que define especificações da camada física e do controle de acesso ao meio de redes locais sem fio. Nesta emenda, foi apresentada a arquitetura WAVE (<em>Wireless Access In Vehicular Environments</em>) para aplicações de Sistemas Inteligentes de Transporte(ITS) e é definida através dos documentos  IEEE P1609.1, IEEE P1609.2,IEEE P1609.3, IEEE P1609.4, IEEE 802.11 e IEEE 802.11p. </p>
+                    <p>Já no final da década de 1990 começou por parte de alguns países a alocação de uma
+						banda livre porem licenciada na faixa de frequências para a execução de aplicações
+						DRSC(Dedicated Short Range Communications) tal qual uma rede veicular. As comunicações
+						por redes veiculares começaram a ser padronizadas no ano de 2004, quando o IEEE definiu a
+						arquitetura WAVE a qual hoje em dia temos exemplos de implementação que funcionam
+						eficientemente. O IEEE 802.11p WAVE pode ser definida por documentos que modularizam a
+						padronização de sua arquitetura. Os mesmos estão descritos a seguir:
+						<h4>&#9899; IEEE 802.11p:</h4> É uma variação do IEEE802.11a que trata de comunicações em redes WiFi locais; esse protocolo é quem define as camadas físicas e de acesso ao meio para
+						redes veiculares.
+						<h4>&#9899; IEEE P1609.1:</h4>É o protocolo que padroniza o gerenciamento de aplicações para uma
+						maior eficiência na execução de aplicações na arquitetura WAVE; é função desse
+						padrão simplificar o máximo possível a unidade de bordo(OBU) deixando toda a parte
+						de interpretação e processamento pesado de aplicações para as unidades de
+						acostamento(RSU’s) e para o gerente de aplicações dos dispositivos remotamente
+						conectados as RSU’s, a chamadas Resource Manager Aplications(RMA’s). Seria então
+						função desse padrão distribuir as solicitações de comunicação feita pelas RMA’s que
+						podem estar conectados a uma ou mais unidades de bordo.
+						<h4>&#9899; IEEE P1609.2:</h4>Já esse documento trata da segurança de informação em redes
+						veiculares uma vez que normatiza as estruturas usadas em redes veiculares para que a
+						troca de informação ocorra de forma segura, o P1609.2 define por exemplo uma
+						infraestrutura de Chaves Públicas(na qual são utilizadas para criptografar e decriptar
+						uma mensagem um par de chaves, uma de domínio publico e uma secreta para cada
+						cliente), e definido também nesse documento as chamadas PSOBU’s(Public Safety
+						OBU’s) que são unidades de bordo especificas para execução de aplicações de
+						segurança de trafego, temos como exemplo de PSOBU’s veículos de policia e de
+						guardas de transito e autoridades que controlam a entidades comuns através da
+						emissão e revogação de certificados.
+						<h4>&#9899; IEEE P1609.3:</h4>Nesse documento estão definidas as estruturas de controle de enlace de
+						rede e de transporte de dados. Temos na pilha de protocolos um plano de
+						gerenciamento que é responsável pela manutenção e configuração do sistema, e um
+						plano de dados que define os serviços usados para troca propriamente dita de
+						informações entre os dispositivos comunicantes. Com relação aos protocolos de
+						comunicação a arquitetura WAVE possui a pilha baseada no IPV6(padrão da internet) e
+						o WAVE Short Message Protocol(WMSP) e com relação a canais de comunicação a
+						arquitetura WAVE conta com dois: o canal de controle(control channel – CCH) e o canal
+						de serviços(Service Channel – SCH). As WMSP’s podem ser enviadas em qualquer um
+						dos canais da banda DSRC alocada enquanto as mensagens IP só podem ser enviadas
+						no canal de serviços. Prioritariamente as aplicações WAVE são executadas no canal de
+						controle ao passo que no canal de serviços temos aplicações de prioridade secundária.
+						A criação do WSMP em redes veiculares se deve a busca de eficiência da comunicação
+						em redes veiculares, uma vez que esse sistema opera em baixa latência e conexão não
+						orientada, o IPV6 se mostrou ineficiente nesse contexto.
+						<h4>&#9899; IEEE P1609.4:</h4>Quando citamos a cisão entre um canal de controle e um canal de
+						serviços(CCH e SCH respectivamente) não entramos em detalhes com relação a eles,
+						essa parte do protocolo define justamente a operação desses canais e descreve como
+						ocorre fisicamente as conexões entre os dispositivos e a transmissão de informações
+						nesse canais.
+
+					</p>
                     <a href="#desafios" class="page-scroll btn btn-default btn-xl sr-button">Desafios e Propostas</a>
                 </div>
             </div>
