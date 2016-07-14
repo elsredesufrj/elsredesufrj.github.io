@@ -150,7 +150,7 @@
                     <div class="col-lg-10 col-lg-offset-1 text-left">
                         <h3>&#9899; Assistência ao Motorista:</h3>
                         <p>
-                        Além dos benefícios em prol da segurança, existem diversas aplicações de redes veiculares para assistência ao motorista. A localização de pontos de interesse é um exemplo disso, um motorista poderia localizar postos de gasolina, hospitais e vagas de estacionamento a partir de um banco de dados disponível na rede veicular. A advertência de aproximação de veículos de emergência como ambulâncias e viaturas possibilitaria um arranjo planejado de carros antes da chegada de um veículo de emergência para que o mesmo pudesse passar com facilidade. A informação sobre condições de vias e o fornecimento de rotas alternativas também seria um benefício, apesar disto já ocorrer com o uso de aparelhos GPS, a informação fornecida pela rede veicular melhoraria a atualização desses dados. O auxílio a cruzamentos possibilitaria uma melhor fluidez no trânsito e assim, a diminuição de congestionamentos. Todos estes exemplos são aplicações que aumentariam a eficiência de veículos no trânsito. 
+                        Além dos benefícios em prol da segurança, existem diversas aplicações de redes veiculares para assistência ao motorista. A localização de pontos de interesse é um exemplo disso, um motorista poderia localizar postos de gasolina, hospitais e vagas de estacionamento a partir de um banco de dados disponível na rede veicular. A advertência de aproximação de veículos de emergência como ambulâncias e viaturas possibilitaria um arranjo planejado de carros antes da chegada de um veículo de emergência para que o mesmo pudesse passar com facilidade. A informação sobre condições de vias e o fornecimento de rotas alternativas também seria um benefício, apesar disto já ocorrer com o uso de aparelhos GPS, a informação fornecida pela rede veicular melhoraria a atualização desses dados. O auxílio a cruzamentos possibilitaria uma melhor fluidez no trânsito e assim, a diminuição de congestionamentos. Todos estes exemplos são aplicações que aumentariam a eficiência de veículos no trânsito.
                         </p>
                     </div>
 
@@ -163,7 +163,7 @@
                     <div class="col-lg-10 col-lg-offset-1 text-left">
                         <h3>&#9899; Entretenimento:</h3>
                         <p>
-                        As aplicações voltadas ao entretenimento são oriundas da utilização das redes veiculares para o acesso a internet, fazendo assim com que fosse possível o compartilhamento de mídia e a descarga de conteúdo de entretenimento da internet como filmes e música. 
+                        As aplicações voltadas ao entretenimento são oriundas da utilização das redes veiculares para o acesso a internet, fazendo assim com que fosse possível o compartilhamento de mídia e a descarga de conteúdo de entretenimento da internet como filmes e música.
                         </p>
                     </div>
                     <div class="col-lg-8 col-lg-offset-2 text-center">
@@ -178,8 +178,42 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <h2 class="section-heading">Tipos de Redes Veiculares</h2>
+                </div>
+                <div class="col-lg-10 col-lg-offset-1 text-left">
                     <hr class="light">
-                    <p>Texto sobre Tipos de Redes Veiculares.</p>
+                    <p>As comunicações entre os nós em uma rede veicular são baseadas em tecnologias wireless
+            e podem ser organizadas das seguintes formas:</p>
+                    <h3>&#9899;Rede Infraestruturada(V2I)</h3>
+                    <p>Neste tipo de rede, os veículos se comunicam com equipamentos fixos localizados nas proximidades
+                      das vias de circulação. Quando um veículo estiver dentro da área de captação de sua antena, poderá enviar dados
+                      referentes a sensores instalados nos veículos para centrais de monitoramente de trânsito ou utilizadas em outras aplicações.
+                      Em contrapartida esses equipamentos pode enviar informações quanto a velocidada da pista, estado das sinalizações luminosas,
+                      presença de veículos de emergência e sinais de alertas das condições da via.</p>
+                      <p>Por se tratar se um rede com um nó que fica responsável por fazer o roteamento entre os diversos elementos, algumas tecnologias
+                      podem ser implementadas, como por exemplo redes baseadas em Bluetooth, GSM, TDMA, WiFi, etc. Assim diversos serviços podem ser
+                      oferecidos além da comunicação entre os veículos e o ambiente.</>
+                    <h3>&#9899;Rede Ad-Hoc(V2V)</h3>
+                    <p>A comunicação ocorre exclusivamente entre os veículos neste tipo de rede. Os pacotes são enviados de um nó para outro
+                       dentro da área de funcionamento da antena e o próximo nó, assim que recebe os pacotes,o retransmite adiante até alcançar
+                       o destino. Neste caso os veículos atuam como ponto de destino e como roteador.</p>
+                    <p>Devido as características dinâmicas deste tipo de arquitetura, não há um tipo específico de topologia implementado e
+                       o roteamento deve ser feito de forma distribuída para que se possa alcançar o destinatário, assim um mesmo pacote
+                       é enviado para multiplos nós até que o pacote seja recebido através de uma das rotas estabelecidas</p>
+                       <p>Outros pontos a considerar são a alternância entre a densidade de nós em uma região, pois sua variabilidde afeta as taxas de
+                          transmissão e podem em casos extremos interromper completamente a comunicação, e também a segurança, pois sua vunerabilidade
+                          é alta devido ao fato das conexões serem criadas quando necessárias entre os nós e sem nenhum tipo de administração central
+                          da rede.</p>
+                       <h3>&#9899;Rede Híbrida</h3>
+                       <p>Ambas as redes anteriores podem ser implementadas em conjunto, complementando uma a outra. Pode-se utilizar a infraestruturada
+                         em cruzamentos e em locais de interesse em ruas e estradas afim de informar sobre condições da pista ou sinalização. No caso da
+                         ad-hoc, dados como velocidade, distância, frenagem, entre outro podem auxiliar a evitar acidentes e, quando não disponível um controle
+                         central de trânsito, regiões de congestionamento.
+                       </p>
+                          <div class="col-lg-offset-0 text-center">
+                          <img src="img\tipos.jpg" width="500" class="img-rounded">
+                          <h6>Figura 3: As redes infraestruturadas(V2I) e ad-hoc(V2V) representadas em uma aplicação de rede híbrida.
+                          </h6>
+                          </div>
                     <a href="#arquitetura" class="page-scroll btn btn-default btn-xl sr-button">Padronizações</a>
                 </div>
             </div>
@@ -291,7 +325,7 @@
                     IEEE P1609.1 : Gerenciamento de Serviço.<br>
                     IEEE P1609.2 : Segurança.<br>
                     IEEE P1609.3 : Serviços de camada de controle de enlace.<br>
-                    IEEE P1609.4 : Canal de controle e múltiplos canais de serviço. 
+                    IEEE P1609.4 : Canal de controle e múltiplos canais de serviço.
                     </p>
                     <br>
                     <p><strong>4) Qual a principal dificuldade na implementação de redes veiculares?</strong><br>
@@ -318,18 +352,18 @@
                                    Otto Carlos M. B. Duarte e Michel Abdalla. (2009). Redes Veiculares:
 Princípios, Aplicações e Desaﬁos.</p>
                         <p>&#9899; Saleh Youseﬁ, Mahmoud Siadat Mousavi, Mahmood Fathy. (2006). Vehicular Ad Hoc Networks (VANETs): Challenges and Perspectives.</p>
-                        <p>&#9899; Kevin C. Lee, Uichin Lee, Mario Gerla.  (2010). Survey of Routing Protocols in Vehicular 
+                        <p>&#9899; Kevin C. Lee, Uichin Lee, Mario Gerla.  (2010). Survey of Routing Protocols in Vehicular
 Ad Hoc Networks.</p>
                         <p>&#9899; Mario Gerla, Leonard Kleinrock. (2011). Vehicular networks and the future of the mobile internet.</p>
-                        <p>&#9899; Abdeldime M.S. Abdelgader, Wu Lenan. (2014). The Physical Layer of the IEEE 802.11p WAVE 
+                        <p>&#9899; Abdeldime M.S. Abdelgader, Wu Lenan. (2014). The Physical Layer of the IEEE 802.11p WAVE
                         Communication Standard: The Specifications and Challenges.</p>
                     </div>
-                    
+
                     <div class="col-lg-8 col-lg-offset-2 text-center">
                     <h2 class="section-heading">Figuras</h2>
                     <hr class="light">
                     </div>
-                    
+
                     <div class="col-lg-12 col-lg-offset-0 text-left">
                         <p>&#9899; Imagem inicial Retirada de <a href="http://www.deviantart.com/art/Traffic-82130572">http://www.deviantart.com/art/Traffic-82130572</a>, autoria de <a href="http://trappedinreality.deviantart.com/"><em>trappedinreality</em></a>.</p>
                         <p>&#9899; Figura 1: Retirada de <a href="http://vehicularcommunication.blogspot.com.br/">http://vehicularcommunication.blogspot.com.br/</a>. </p>
